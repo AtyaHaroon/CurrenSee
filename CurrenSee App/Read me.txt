@@ -1,0 +1,12 @@
+credentials
+Admn :admin@gmail.com
+pass : Qwert@123
+
+User 
+atyaharoon98@gmail.com
+pss: qwerty
+
+note:
+This project is currently using an API key that is on a trial plan, which allows for a maximum of 100 currency conversion requests. Once this limit is reached, the API key will no longer function unless upgraded to a paid plan. If you encounter issues with the API after exceeding the limit, please be aware that it is due to the trial restrictions.
+
+If you plan to use this project extensively, consider obtaining your own API key and upgrading to a paid plan for higher usage limits.

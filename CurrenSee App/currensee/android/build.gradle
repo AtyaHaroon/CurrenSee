@@ -1,0 +1,29 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+      dependencies {
+       
+    // classpath 'com.google.gms:google-services:4.4.2'
+    // ...
+
+        // classpath 'com.google.gms:google-services:4.4.1' // This is your dependency
+        // classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        //   //-------------------step to connect firebase
+        //  classpath "com.google.gms:google-services:4.4.1"
+
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
